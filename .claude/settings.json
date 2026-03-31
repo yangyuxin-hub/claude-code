@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"console.log(JSON.stringify({hookSpecificOutput:{hookEventName:'SessionStart',additionalContext:'会话开始。请立即根据项目 CLAUDE.md 中的进度表，用中文输出简短项目简报：1) 各篇文章状态（稿件/配图/发布） 2) 建议下一步行动（最多3项）。直接输出，不要等用户询问。'}}))\"",
+            "statusMessage": "加载项目状态..."
+          }
+        ]
+      }
+    ]
+  }
+}
